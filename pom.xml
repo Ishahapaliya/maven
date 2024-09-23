@@ -27,7 +27,16 @@
     </dependency>
   </dependencies>
 
+<distributionManagement>
+    <repository>
+      <id>local-repo</id>
+      <name>Releases Repository</name>
+      <url>file:///C:/xampp/htdocs</url>
+    </repository>
+  </distributionManagement> 
+    
   <build>
+
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -61,24 +70,8 @@
           </configuration>
         </plugin>
 
-
-        
-</dependencies>
-
-  <distributionManagement>
-    <repository>
-      <id>local-repo</id>
-      <name>Releases Repository</name>
-      <url>file:///C:/xampp/htdocs</url>
-    </repository>
-  </distributionManagement> 
-    
-  <build>
-
   <artifactId>maven-deploy-plugin</artifactId>
           <version>3.0.0-M1</version>
-
-
     
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
